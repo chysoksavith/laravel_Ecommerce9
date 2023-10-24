@@ -1,0 +1,81 @@
+.main-cart-warp{
+    margin-top: 150px;
+    padding: 10px;
+}
+.title-cart{
+    display: flex;
+    justify-content: space-between;
+}
+.title-cartShow{
+    padding: 10px;
+    width: 1143px;
+    font-size: 32px;
+    font-weight: 600;
+}
+.righ-title-cartShow{
+    width: 492px;
+    padding: 10px;
+}
+.btnCartMain-show{
+    margin: 5px auto;
+    display: block;
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    padding: 5px 10px;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    border:none;
+    transition: all 0.3s;
+}
+.btnCartMain-show:hover{
+    background: transparent;
+    color: black;
+    border: 1px solid black;
+}
+/*  */
+.cart-warpper{
+    display: flex;
+    justify-content: space-between;
+}
+.left-cart-warp{
+    width: 1143px;
+}
+/* count btn */
+.countInputCartShow {
+    display: flex;
+}
+.d-c,
+.i-c {
+    background-color: #f4f4f4;
+    border: none;
+    outline: none;
+    width: 34px;
+    height: 54px;
+    cursor: pointer;
+}
+.qty {
+    width: 105px;
+    background-color: #f4f4f4;
+    border: none;
+    outline: none;
+    height: 54px;
+    text-align: center;
+}
+.cartTotal{
+    padding: 10px;
+    margin-top: 40px;
+}
+.TotPric{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+
+
+.right-cart-warp{
+    width: 492px;
+}

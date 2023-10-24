@@ -1,0 +1,14 @@
+.boxColor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+.boxColorCode{
+    margin-top: 10px;
+    width: 150px;
+    height: auto;
+    padding: 15px;
+    border: 1px solid black;
+
+}

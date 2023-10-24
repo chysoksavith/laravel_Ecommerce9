@@ -1,0 +1,345 @@
+header{
+    z-index: 9999;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.header_link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.imgHeader {
+    padding-left: 20px;
+    display: flex;
+    margin-right: auto;
+    cursor: pointer;
+}
+.imgHeader img {
+    width: 115px;
+    height: 50px;
+}
+.NavLink_Header {
+    display: flex;
+    gap: 20px;
+    margin-top: 1rem;
+}
+.NavLink_Header li {
+    list-style: none;
+    font-family: 'Orbitron', sans-serif;
+
+}
+.NavLink_Header li a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 14px;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 600;
+    transition: all 0.5s ease;
+}
+.NavLink_Header li a:hover {
+ color: rgb(255, 145, 163);
+}
+/* mega menu */
+.mega-menu {
+    position: absolute;
+    z-index: 999;
+    left: 0;
+    width: 100%;
+    top: 50px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+.mega-menu .content {
+    background-color: #ffffff;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    width: 100%;
+    justify-content: space-between;
+}
+.content .col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    line-height: 3rem;
+}
+.content .col .img-wrapper {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 20vw;
+    overflow: hidden;
+}
+.content .col .img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.content .col img {
+    width: 100%;
+    transition: transform 0.4s ease-in-out;
+}
+.content .col .img-wrapper:hover img {
+    transform: scale(1.1);
+}
+.content .col h2 {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+}
+.content .col p {
+    font-size: 14px;
+    line-height: 20px;
+}
+.content .col .mega-links {
+    border-left: 1px solid black;
+}
+
+.col .mega-links li,
+.col .mega-links li a {
+    padding: 0 1rem;
+}
+.menu-items li:hover .mega-menu {
+    top: 50px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.Acc_addCart {
+    display: flex;
+    padding: 0 20px;
+}
+/* mwega menu search */
+.mega-menu-search {
+    transition: all 0.3s ease;
+    display: none;
+    position: absolute;
+    top: 53px;
+    left: 0;
+    background-color: #ffffff;
+    width: 100%;
+    z-index: 999;
+}
+.mega-menu-content-search {
+    transition: all 0.3s ease;
+    z-index: 9999;
+    padding: 1rem;
+    width: 100%;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+.iconCart {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 1rem;
+}
+.iconCart li {
+    list-style: none;
+}
+.iconCart li i {
+    font-size: 20px;
+    cursor: pointer;
+    color: #000000;
+}
+.mega-menu-content-search input {
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+}
+.mega-menu-content-search input::placeholder {
+    font-size: 16px;
+    font-family: "Orbitron", sans-serif;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+/* menu mobile */
+
+.menu_moba{
+    display: none;
+    padding: 0 20px;
+    cursor: pointer;
+}
+/* asie menu moba */
+aside{
+    font-family: 'Orbitron', sans-serif;
+
+    position: fixed;
+    transition: right .4s ease;
+    right: -400px;
+    width: 400px;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    z-index: 4;
+    height: 100vh;
+    top: 0;
+}
+aside.active{
+    right: 0;
+}
+aside a{
+    font-family: 'Orbitron', sans-serif;
+    display: block;
+    color: #000000;
+    text-decoration: none;
+    padding: 12px 0;
+    font-size: 14px;
+    font-weight: 400;
+}
+.header_cart{
+    padding: 20px 10px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.575);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header_cart span{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+aside button.close{
+    font-size:20px;
+    border:0;
+    background-color: transparent;
+    cursor:pointer;
+}
+.backdrop{
+    display:none;
+    position: fixed;
+    z-index:3;
+    inset: 0;
+    background-color: rgba(0,0,0,0);
+    transition: background-color .4s ease;
+    backdrop-filter: blur(5px);
+}
+.backdrop.active{
+    display:block;
+    background-color: rgba(0,0,0,.35);
+}
+.cartCount{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    position: relative;
+}
+/* .text_itemCount span{
+    letter-spacing: 0px;
+} */
+.itemCount{
+    letter-spacing: 0px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -10px;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 100%;
+    font-size: 13px;
+    font-weight: 600;
+}
+.nav-links{
+    padding: 0;
+    text-decoration: none;
+    color: #000000;
+    font-size: 14px;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 400;
+}
+.nav-links:hover{
+  color: #000000;
+}
+
+
+@media (max-width: 575.98px) {
+    .menu_moba{
+        display: block;
+        font-size: 25px;
+    }
+    .Icon_disNone{
+        display: none;
+    }
+    /* navline menu bar */
+    .NavLink_moba_res{
+        display: none;
+    }
+    .imgHeader {
+        margin: auto;
+        cursor: pointer;
+        padding-left: 50px;
+    }
+    aside{
+        right: -320px;
+        width: 320px;
+    }
+    .mobaDropdown{
+        display: none;
+    }
+
+}
+
+/* Small Devices (Tablet Portrait) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .menu_moba{
+        display: block;
+        font-size: 25px;
+    }
+    .Icon_disNone{
+        display: none;
+    }
+    /* navline menu bar */
+    .NavLink_moba_res{
+        display: none;
+    }
+    .imgHeader {
+        margin: auto;
+        cursor: pointer;
+        padding-left: 50px;
+    }
+    .mobaDropdown{
+        display: none;
+    }
+}
+
+/* Medium Devices (Tablet Landscape) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .menu_moba{
+        display: block;
+        font-size: 25px;
+    }
+    .Icon_disNone{
+        display: none;
+    }
+    /* navline menu bar */
+    .NavLink_moba_res{
+        display: none;
+    }
+    .imgHeader {
+        margin: auto;
+        cursor: pointer;
+        padding-left: 50px;
+    }
+}
+
+/* Large Devices (Desktops) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    /* Your styles for large devices go here */
+}
+
+/* Extra Large Devices (Large Desktops) */
+@media (min-width: 1200px) {
+    /* Your styles for extra large devices go here */
+}

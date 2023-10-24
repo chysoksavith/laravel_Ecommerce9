@@ -1,0 +1,99 @@
+/* font-family: 'Orbitron', sans-serif; */
+.ALinkPro{
+    margin: 20px auto;
+    text-decoration: none;
+    color: black;
+}
+.ALinkPro:hover{
+    color: black;
+}
+.contaienr_prod{
+    margin-top: 50px;
+    padding: 0px 20px;
+}
+.headerTitle_Pro{
+    text-align: center;
+
+}
+.headerTitle_Pro span{
+    font-size: 140px;
+    font-weight: 600;
+    letter-spacing: 10px;
+}
+.product_items{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.header_prod{
+    width: 330px;
+    height: 480px;
+}
+.imgProd{
+    position: relative;
+    padding: 10px;
+}
+.imgProd img{
+    width: 100%;
+    height: 300px;
+}
+.OutOfStock{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 250px;
+    padding: 10px 20px;
+    background-color: #d0d3d49a;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+}
+.OutOfStock span{
+    letter-spacing: 3px;
+}
+.bodyProd{
+    padding: 5px 20px;
+}
+.bodyProd span{
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    letter-spacing: 3px;
+    margin-top: 5px;
+    text-transform: capitalize;
+}
+.ProTitle , .ProPrice{
+    font-size: 14px;
+    font-weight: 600;
+}
+.ProdDes{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.btnCartMain{
+    margin: 5px auto;
+    display: block;
+    width: 200px;
+    height: 50px;
+    background-color: black;
+    padding: 5px 10px;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    border:none;
+    transition: all 0.3s;
+}
+.btnCartMain:hover{
+    background: transparent;
+    color: black;
+    border: 1px solid black;
+}
+
